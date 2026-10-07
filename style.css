@@ -1,0 +1,25 @@
+:root{--bg:#0B0B12;--panel:#15151F;--line:#1E1E30;--ink:#F2F4FF;--mute:#8FA3C8;--cyan:#22D3EE;--purple:#7C3AED;--gold:#FFD966}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Avenir Next","Segoe UI",system-ui,sans-serif;line-height:1.55;padding:0 20px 56px}
+.wrap{max-width:880px;margin:0 auto}
+header{display:flex;align-items:center;gap:18px;padding:40px 0 24px;border-bottom:1px solid var(--line)}
+header img{width:72px;height:72px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+header h1{margin:0;font-size:26px;letter-spacing:.06em;text-transform:uppercase;background:linear-gradient(90deg,var(--purple),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+header p{margin:2px 0 0;color:var(--mute);font-size:14px}
+nav{margin-left:auto;display:flex;gap:18px;font-size:14px}
+nav a{color:var(--mute);text-decoration:none}nav a:hover,nav a[aria-current]{color:var(--ink)}
+h2{font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin:40px 0 12px}
+h3{font-size:16px;margin:22px 0 6px}
+p,li{color:#d6dcf0}
+a{color:var(--cyan)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:34px 0 6px}
+.hero p.lead{font-size:19px;color:var(--ink);margin:0 0 14px}
+.shots{display:flex;gap:10px}.shots img{width:100%;border-radius:14px;border:1px solid var(--line)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:12px 0}
+.contact{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-block;background:var(--cyan);color:#0B0B12;font-weight:700;padding:10px 16px;border-radius:999px;text-decoration:none}
+.btn.quiet{background:transparent;color:var(--ink);border:1px solid var(--line)}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;color:var(--mute);font-size:13px}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px}dt{color:var(--mute)}dd{margin:0}
+.lang{display:flex;gap:10px;margin:18px 0}.lang a{padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--mute)}
+@media(max-width:640px){.hero{grid-template-columns:1fr}header{flex-wrap:wrap}nav{margin-left:0;width:100%}}
