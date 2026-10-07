@@ -14,7 +14,8 @@ p,li{color:#d6dcf0}
 a{color:var(--cyan)}
 .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:34px 0 6px}
 .hero p.lead{font-size:19px;color:var(--ink);margin:0 0 14px}
-.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.hero>div{min-width:0}.shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;min-width:0}.shots img{display:block;width:100%;max-width:100%;min-width:0;height:auto;border-radius:14px;border:1px solid var(--line)}
+html,body{overflow-x:hidden}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:12px 0}
 .contact{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .btn{display:inline-block;background:var(--cyan);color:#0B0B12;font-weight:700;padding:10px 16px;border-radius:999px;text-decoration:none}
